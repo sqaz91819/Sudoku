@@ -42,7 +42,7 @@ class Sudoku {
         /*  insert a valid number at specified (x, y)
          */
         bool insert_number( int x, int y ) {
-            bool used[sudoku_size+1] ;
+            bool used[sudoku_size + 1] ;
             for ( int i = 0 ; i < sudoku_size+1 ; ++i ) used[i] = false ;
             check_cross( x, y, used ) ;
             check_cell( x, y, used ) ;
